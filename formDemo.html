@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
+        <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
 </head>
 <body>
+     
     <h2>Student Registration form</h2>
     <br><br>
+    
+<nav>
+    <a href="#home" target="_blank"  style="height: 20px; width: 20px;padding-top: 40px;">🏠 Home</a>
 
+    <a href="#about" target="_blank">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div  class="product" >
+    <img src="assets\ladhak.jpg" alt="Running Shoes" 
+    width="200px"  height="200px" >
+
+    <h3>Running Shoes</h3>
+    <p>₹1,499</p>
+
+    <button>Add to Cart</button>
+    
+   </div>
+     <br> <br>
+    
     <form >
    <label for="First Name"> Firstname</label>
    <input type="text" name="firstName"
@@ -19,6 +42,25 @@
    <label   for=" LastName">LastName</label>
    <input type="text"name="LastName" id="LastName" class="LastName" value="LastName" readonly>
   <br>  <br>
+  <label for=" email">email</label>
+  <input type="email" name="email"
+  placeholder="Enter email" auto> 
+  <br> <br>
+   <label for=" email">email</label>
+  <input type="email" name="email"
+  placeholder="Enter email" auto> 
+  
+   <br> <br>
+  <label for=" email">email</label>
+  <input type="email" name="email"
+  placeholder="Enter email" auto> 
+  <br> <br>
+
+
+  <label for=" email">email</label>
+  <input type="email" name="email"
+  placeholder="Enter email" auto> 
+     <br> <br>
   <label for=" email">email</label>
   <input type="email" name="email"
   placeholder="Enter email" auto>
@@ -34,8 +76,10 @@
     <label for="quantity">Set Quantity</label>
     <input type="number" name="number" id="" placeholder="Add Quantity" min="1"  max="5">
     <br> <br>  
+
+    <!-- File type use for to get Pdf like files from local device == multiple is use to get multiple file  -->
     <label for="File"> File</label>
-        <input type="file" name="file" id="" multiple>
+        <input type="file" name="file" id="" multiple accept=".Pdf">
     <br> <br>
     <label for="DOB">DOB</label>
     <input type="date" name="Date Of Birth" id="">
@@ -51,14 +95,33 @@
     <option value="Bihar">Bihar</option>
     <option value="Assam">Assam</option>  </select>
     <br><br>
-    <label for="Skill"> Select Skills</label>
     <input type="search" name="search" id=""> <button>&num;</search></button>
     <br><br>
-  <button style="margin-left: 40px;" type="button"> Register</button>
+
+    <!--   Radio button     always give name to all input in radio button same to select perticluar option only nahi toh all select honge-->
+    <h3>  Select Gender </h3>
+    <input type="radio" id="Male" class="Male" value="Male" name="gender"> Male
+    <input type="radio" id="female" class="female" value="female" name="gender">female
+    <input type="radio" id="other" class="other" value="other" name="gender">other
+
+    <br><br>
+
+    <!--( value = " Html"  )is required in checkbox to carry input data to database -->
+     <h3>Select Skills </h3>
+    <input type="checkbox"  value="Html">HTML
+    <input type="checkbox"  value="Css">Css
+    <input type="checkbox" value="boots">Bootstrap
+        <input type="checkbox" name="css" id="BootStarp" value="boots">Java
+    <input type="checkbox"  value="boots">Cpp
+
+
+       <br> <br>
+    <button style="margin-left: 40px;" type="button"> Register</button>
   
   <button  style="margin-left: 40px;" type="reset">reset</button>
   
 
     </form>
+
 </body>
 </html>
