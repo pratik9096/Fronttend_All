@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .div1 {
+      background-color: red !important;
+    }
+    .p1 {
+      /*   !important give priority to apply that perticular style first is there no any parent child relation */
+      background-color: aqua !important ;
+    }
+    #h22 {
+      background-color: beige !important;
+    }
+    img {
+      width: 350px;
+      height: 350px;
+    }
+    #img1 {
+      /* filter: blur(5px); */
+      /* filter: brightness(300%);    value should be > 100%*/
+      /*   contrast colour under the 100% */
+      /* filter: contrast(60%); <100%*/
+
+      /* filter: grayscale(0%); */
+      /* filter: hue-rotate(150deg); */
+
+      /* filter: invert(100%); */
+      /* filter: opacity(0.1); */
+      /* filter: saturate(10%); */
+      /* filter: sepia(100%);  make image yellowish tone color */
+    }
+
+    #img2 {
+      box-shadow:
+         /*horizontal vertical blurr-color  */
+        -10px 20px 40px red,
+        10px 1px 10px blue;
+    }
+    #h22 {
+      font-size: 50px;
+      text-shadow:
+        5px 0px 10px yellow,
+        0px 5px 5px yellow;
+    }
+    .box {
+      width: 250px;
+      height: 100px;
+      border: 2px solid blue;
+      overflow: scroll;
+      position: relative;
+      z-index: 1000;
+    }
+    #div2 {
+      padding-top: 20px;
+    }
+
+    .image-container {
+      width: 250px;
+      height: 250px;
+      border: 2px solid violet;
+      overflow: hidden;
+      border-radius: 100%;
+    }
+    #image2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <h2 style="background-color: cornflowerblue">Overflow content</h2>
+    <div class="image-container">
+      <img id="image2" src="https://picsum.photos/300/250?random" alt="picss" />
+    </div>
+    <div class="box">
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe est
+        assumenda ex officia quos, neque quae vel odit enim sit, qui provident
+        nobis. Nihil nemo voluptate est. Reprehenderit molestiae natus, saepe
+        totam laborum incidunt minima porro non ut. Maiores, ab.
+      </h4>
+    </div>
+    <div id="div2">
+      <img id="img1" src="./ladhak.jpg" alt="image" />
+      <img id="img2" src="./ladhak.jpg" alt="image" />
+    </div>
+    <div class="div1">
+      <p class="p1" style="background-color: brown">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla,
+        delectus sapiente cum eos quam doloremque nihil. Ratione beatae
+        repudiandae, excepturi voluptate quas minima facere aliquam iusto
+        dolorem. Magni fugiat veniam quaerat alias officia maxime modi
+        aspernatur natus velit ullam odit assumenda, hic cupiditate obcaecati
+        suscipit nihil dolor exercitationem quibusdam aliquid.
+      </p>
+      <h2 id="h22">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro neque
+        voluptas totam delectus nihil animi repellat dolorem quas culpa
+        accusamus quaerat saepe, inventore cumque rerum doloribus ipsum ex! Sed,
+        praesentium?
+      </h2>
+    </div>
+  </body>
+</html>
