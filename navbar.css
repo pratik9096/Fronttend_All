@@ -1,0 +1,87 @@
+* {
+  /* background-color: antiquewhite; */
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: #333;
+  padding: 15px 30px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  /* margin-top: 24px; */
+}
+.menu a {
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+.menu a:hover {
+  background-color: white;
+  color: grey;
+  transform: scale(1.1);
+}
+.menu {
+  margin-top: 5px;
+}
+option:nth-child(even) {
+  background-color: #333;
+}
+
+.icons {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  float: right;
+  padding-left: 490px; /* float: right; */
+}
+#img1 {
+  width: 45px;
+  height: 45px;
+}
+#img2 {
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+}
+#img3 {
+  width: 45px;
+  height: 45px;
+  margin-left: 8px;
+}
+
+.div3 {
+  align-content: center;
+  background-color: whitesmoke;
+}
+.div3 h2 {
+  color: #3d3a3a;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.clear {
+  clear: both;
+}
+.footer {
+  background-color: #3d3a3a;
+  height: 50px;
+}
+.footer h4 {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  padding-top: 10px;
+}

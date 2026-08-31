@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PositionDemo</title>
+    <style>
+      .box {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        /* right: 30px; */
+        width: 150px;
+        height: 220px;
+        background-color: aqua;
+        overflow: hidden;
+        z-index: 4;
+      }
+
+      img {
+        object-fit: cover;
+      }
+      .box1 {
+        position: sticky;
+        top: -150px;
+        left: 40px;
+        /* right: 30px; */
+        width: 150px;
+        height: 120px;
+        background-color: aqua;
+        overflow: hidden;
+        z-index: 3;
+      }
+      #img2 {
+        object-fit: cover;
+      }
+      .box2 {
+        position: sticky;
+        top: -250x;
+        left: 50px;
+        /* right: 30px; */
+        width: 250px;
+        height: 220px;
+        background-color: aqua;
+        overflow: hidden;
+        z-index: 2;
+      }
+      img {
+        object-fit: cover;
+      }
+      .box3 {
+        position: relative;
+        top: -350px;
+        left: 50px;
+        width: 250px;
+        height: 220px;
+        background-color: aqua;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .parent {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 350px;
+        height: 350px;
+        background-color: blueviolet;
+        z-index: 4;
+      }
+      .child {
+        position: fixed;
+        /* top: 70px; */
+        bottom: 20px;
+        float: right;
+        right: 40px;
+        width: 80px;
+        height: 80px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="./horse html.jpg" alt="mentor" />
+    </div>
+    <div class="box1">
+      <img src="./seven mentor.jpg" alt="ladsh" />Seven mentor
+    </div>
+
+    <div class="box2">
+      <img src="./retrro.png" alt="retro" />
+    </div>
+    <div class="box3">
+      <img src="./me.jpeg" alt="mee " />
+    </div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
