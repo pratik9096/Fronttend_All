@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blanchedalmond;
+      }
+      .container {
+        width: 80%;
+        margin: 100px auto;
+        padding: 40px;
+        background: white;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      /* Tablet and mobile resposive */
+      @media (min-width: 400px) and (max-width: 850px) {
+        body {
+          background-color: lightgreen;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: cursive;
+        }
+        .container {
+          width: 70%;
+        }
+
+        /* @media (max-width: 850px) {
+          body {
+            background-color: lightblue;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: cursive;
+          }
+          .container {
+            width: 70%;
+          }
+        } */
+        * {
+          box-sizing: border-box;
+        }
+
+        .navbar {
+          height: 70px;
+          padding: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #222;
+          color: white;
+        }
+        .logo {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        .navitems {
+          display: flex;
+          gap: 50px;
+          font-size: 18px;
+          list-style: none;
+        }
+        .navitems a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+        }
+        @media (min-width: 760px) {
+          .navbar {
+            height: auto;
+            padding: 20px;
+
+            flex-direction: column;
+            gap: 20px;
+          }
+          .navitems {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+          }
+        }
+        h2 {
+          text-align: center;
+        }
+        .courses {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          /* border-radius: 10px black bold; */
+          gap: 25px;
+        }
+        .Card {
+          background-color: antiquewhite;
+          border-radius: 10px;
+          padding: 20px;
+          margin-top: 10px;
+        }
+        .btn {
+          border-radius: 10px;
+          height: 40px;
+          width: 100px;
+        }
+        @media (min-width: 760px) {
+          body {
+          }
+          .courses {
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Mywebsite</div>
+      <ul class="navitems">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
+    <!-- Card Responsive  -->
+    <section class="courses">
+      <div class="Card">
+        <h2>JAVA Full stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          ipsum?
+        </p>
+        <button class="btn">Lern More</button>
+      </div>
+      <div class="Card">
+        <h2>JAVA Full stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          ipsum?
+        </p>
+        <button class="btn">Lern More</button>
+      </div>
+      <div class="Card">
+        <h2>JAVA Full stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          ipsum?
+        </p>
+        <button class="btn">Lern More</button>
+      </div>
+      <div class="Card">
+        <h2>JAVA Full stack</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          ipsum?
+        </p>
+        <button class="btn">Lern More</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <h1>Responsive web page Demo</h1>
+      <p>
+        using media query Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Dolor excepturi ratione vel numquam, optio amet maiores explicabo,
+        soluta a harum quibusdam aliquid sed esse dolorem, animi cupiditate
+        nemo! Repellendus, soluta.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .linear {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(
+          /* rgba(181, 175, 175, 0.6),
+          rgba(0, 0, 0, 0.2) */
+        );
+
+        /* to right,
+          orange 10%,
+          white 15%,
+          green */
+        /*    Stripe colour combo to left,
+          red 0%,
+          red 25%,
+          blue 25%,
+          blue 50%,
+          green 50%,
+          green 75%,
+          yellow 75%,
+          yellow 100% */
+      }
+      .hero {
+        width: 100%;
+        height: 100vh;
+        background-image:
+          linear-gradient(rgba(181, 175, 175, 0.6), rgba(0, 0, 0, 0.2)),
+          url(./assets/horse\ html.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .hero1 {
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+      .hero1 {
+        color: white;
+        font-size: 50px;
+      }
+      .Box1 {
+        height: 400px;
+        /* background: radial-gradient(circle at 30% 40%, red, green, blue, pink); */
+        /* background-image: radial-gradient(circle, red 0%, yellow 30%, blue 70%); */
+        background: radial-gradient(
+          circle,
+          red 0%,
+          red 30%,
+          yellow 30%,
+          yellow 75%,
+          blue 70%,
+          blue 100%
+        );
+      }
+
+      .neon {
+        width: 400px;
+        height: 250px;
+        background: radial-gradient(circle, #00ffff, #006666, #001111);
+      }
+
+      .dashboard-card {
+        width: 300px;
+        height: 250px;
+        color: white;
+        border-radius: 15px;
+        margin-left: 20px;
+
+        background: radial-gradient(
+          circle at top right,
+          #4facfe,
+          #1e3c72,
+          #111827
+        );
+      }
+
+      .Box2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        /* background: conic-gradient(from 75deg, red, rgb(212, 212, 140), blue, pink, green); */
+
+        /* Reapeting gradient unique feature of conic */
+        background: repeating-conic-gradient(
+          red 0deg,
+          red 10deg,
+          yellow 10deg,
+          yellow 20deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Box2"></div>
+    <hr />
+    <div class="dashboard-card">
+      <h2>Sales</h2>
+      <p>₹1,25,250</p>
+    </div>
+    <hr />
+    <div class="neon"></div>
+    <hr />
+
+    <div class="Box1"></div>
+    <hr />
+    <section class="hero1">
+      <h1>Welcome to Pratik Verse ,Pune</h1>
+    </section>
+    <div class="linear"></div>
+    <div class="hero"></div>
+  </body>
+</html>

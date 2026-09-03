@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* .Box1 {
+      .Box1 {
         width: 100px;
         height: 100px;
         background: red;
@@ -51,25 +51,24 @@
           transform: rotate(360deg);
         }
 
-        /* from {
+        from {
           transform: translateX(0);
           position: relative;
           top: 0;
           left: 0;
-        } */
-      /* to {
+        }
+        to {
           transform: translateX(500px);
           position: relative;
           top: 100px;
           left: 560px;
-        } */
-      /* } */
-      /*  spinner square  */
-      .spinner {
+        }
+      }
+      spinner square .spinner {
         width: 50px;
         height: 50px;
         border: 5px solid #bbb;
-        border-radius: 60%;
+        border-radius: 50%;
         border-top: 5px solid black;
 
         animation: spin 0.5s infinite linear;
@@ -81,24 +80,31 @@
         }
       }
 
+      .div2 {
+        display: flex;
+        padding: 20px;
+        margin-left: 20px;
+      }
+
       .card {
         width: 250px;
         height: 350px;
         background: lightcoral;
-        animation: zoom 1 infinite alternate;
+        animation: zoom 1s infinite alternate;
       }
 
       @keyframes zoom {
         0% {
-          transform: scale(1);
+          transform: scale(1.1);
         }
         50% {
           transform: scale(0);
         }
         100% {
-          transform: scale(1);
+          transform: scale(1.1);
         }
       }
+
       /* image opacity effect */
       .img {
         width: 200px;
@@ -115,10 +121,11 @@
           opacity: 1;
         }
       }
+
       /* button hover effect  */
       .btn {
         padding: 12px 25px;
-        background: black;
+        background: rgb(214, 2, 2);
         color: white;
         border: none;
         border-radius: 5px;
@@ -139,6 +146,7 @@
           transform: scale(1);
         }
       }
+
       .div1 {
         width: 300px;
         height: 350px;
@@ -147,10 +155,11 @@
         display: flex;
       }
 
-      .img {
+      img {
         width: 150px;
         height: 200px;
       }
+
       .card1 {
         opacity: 0;
         animation: cardEntry 0.6s ease forwards;
@@ -191,6 +200,19 @@
   .card1
 
   <body>
+    <div class="div2">
+      <div class="spinner" style="margin-left: 20px"></div>
+
+      <div class="spinner" style="margin-left: 20px"></div>
+
+      <div class="spinner" style="margin-left: 20px"></div>
+
+      <div class="spinner" style="margin-left: 20px"></div>
+
+      <div class="spinner" style="margin-left: 20px"></div>
+    </div>
+
+    <hr />
     <div class="div1">
       <div class="card1" style="width: 100px; height: 90px; background: blue">
         card 1
@@ -223,6 +245,6 @@
     <hr />
     <div class="spinner"></div>
 
-    <!-- <div class="Box1"></div> -->
+    <div class="Box1"></div>
   </body>
 </html>
