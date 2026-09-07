@@ -88,29 +88,25 @@
         h2 {
           text-align: center;
         }
-        .courses {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          /* border-radius: 10px black bold; */
-          gap: 25px;
-        }
-        .Card {
-          background-color: antiquewhite;
-          border-radius: 10px;
-          padding: 20px;
-          margin-top: 10px;
-        }
-        .btn {
-          border-radius: 10px;
-          height: 40px;
-          width: 100px;
-        }
-        @media (min-width: 760px) {
-          body {
-          }
+
+        @media (max-width: 900px) {
           .courses {
-            width: auto;
-            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* border-radius: 10px black bold; */
+            gap: 25px;
+          }
+          .Card {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 10px;
+            width: 100%;
+          }
+          .btn {
+            border-radius: 10px;
+            height: 40px;
+            width: 100px;
           }
         }
       }
