@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <style>
+    .div1 div {
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <div class="grid grid-cols-2 gap-4 bg-b  bg-blue-400  max-w-7xl mx-auto p-6">
+      <h1 class="text-3xl font-bold text-greay-800"
+      >Admin DashBoard</h1>
+      <hr />
+      <div  class=" grid grid-cols-3 gap-6 mt-8" >
+        <!-- card 1  -->
+         <div class=" bg-gray-300 border border-grey-200 rounded-xl shadow-lg">
+            <p class="text-sm text-greay-700"> Total Usser</p>
+            <p class="text-3xl font-bold text-greay-800 mt-2"> 12,364</p>
+         </div>
+         <!-- card 2 -->
+          <div class=" bg-gray-300 border border-grey-200 rounded-xl shadow-lg">
+            <p class="text-sm text-greay-700"> Total Products</p>
+            <p class="text-3xl font-bold text-greay-800 mt-2">128363</p>
+         </div>
+         
+            <!--  card 3  -->
+         <div class=" bg-gray-300 border border-grey-200 rounded-xl shadow-lg">
+            <p class="text-sm text-greay-700"> Total Orders</p>
+            <p class="text-3xl font-bold text-greay-800 mt-2"> 3847</p>
+         </div>
+      </div>
+      </div>
+      <div  class="grid grid-cols-2 gap-4 bg-b bg-blue-400">
+      <div>item 1</div>
+      <div>item 1</div>
+      <div>item 1</div>
+      <div>item 1</div>
+    </div>
+    </div>
+
+    <!-- justify center + items center -->
+    <div
+      class="h-screen flex justify-center items-center w-100 h-50 gap-5 bg-grey-100"
+    >
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+    </div>
+    <div class="flex-col justify-center items-center gap-5 bg-grey-100">
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">Akshay Kumar</div>
+    </div>
+
+    <div class="flex items-center gap-3 p-4">
+      <img
+        src="https://picsum.photos/50"
+        alt="images"
+        class="w-20 h-20 rounded-full"
+      />
+    </div>
+
+    <div class="flex gap-5 mt-2">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Save</button>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Cancel</button>
+    </div>
+
+    <div
+      style="background-color: brown"
+      class="flex bg-blue-400 px-3 div1 flex-row gap-5 mt-4"
+    >
+      <div>Card1</div>
+      <div>Card2</div>
+
+      <div>Card3</div>
+
+      <div>Card4</div>
+
+      <div>Card5</div>
+    </div>
+  </body>
+</html>
