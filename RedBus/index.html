@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bus Booking UI</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="h-20 bg-white shadow-md flex items-center">
+      <div class="w-[80%] mx-auto flex items-center justify-between">
+        <!-- LEFT SIDE -->
+        <div class="flex items-center gap-12">
+          <!-- Logo -->
+          <div class="text-red-500 text-3xl font-bold">redBus</div>
+
+          <!-- Bus -->
+          <div
+            class="flex flex-col items-center text-red-500 border-b-4 border-red-500 pb-4"
+          >
+            <i data-lucide="bus" class="w-7 h-7"></i>
+            <span class="text-sm mt-1">Bus tickets</span>
+          </div>
+
+          <!-- Train -->
+          <div class="flex flex-col items-center text-gray-700">
+            <i data-lucide="train-front" class="w-7 h-7"></i>
+            <span class="text-sm mt-1">Train tickets</span>
+          </div>
+
+          <!-- Hotel -->
+          <div class="flex flex-col items-center text-gray-700">
+            <i data-lucide="bed-double" class="w-7 h-7"></i>
+            <span class="text-sm mt-1">Hotels</span>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="flex items-center gap-10">
+          <div class="flex items-center gap-2">
+            <i data-lucide="list" class="w-5"></i>
+            <span>Bookings</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <i data-lucide="circle-help" class="w-5"></i>
+            <span>Help</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <i data-lucide="circle-user-round" class="w-5"></i>
+            <span>Account</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section
+      class="relative h-[430px] bg-cover bg-center"
+      style="
+        /* background-image: url(&quot;https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80&quot;); */
+      "
+    >
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/45"></div>
+
+      <!-- Hero Content -->
+
+      <div class="relative w-[80%] mx-auto pt-20">
+        <h1 class="text-white text-5xl font-bold max-w-xl leading-tight">
+          India's No. 1 online
+          <br />
+          bus ticket booking site
+        </h1>
+
+        <!-- SEARCH BOX -->
+
+        <div class="mt-20 bg-white rounded-2xl shadow-xl p-5">
+          <div class="flex items-center">
+            <!-- FROM -->
+
+            <div class="w-1/4 border-r px-6">
+              <div class="flex items-center gap-3">
+                <i data-lucide="bus-front" class="w-6"></i>
+
+                <div>
+                  <p class="text-gray-400 text-sm">From</p>
+
+                  <input
+                    type="text"
+                    placeholder="Enter city"
+                    class="outline-none text-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- TO -->
+
+            <div class="w-1/4 border-r px-6">
+              <div class="flex items-center gap-3">
+                <i data-lucide="bus-front" class="w-6"></i>
+
+                <div>
+                  <p class="text-gray-400 text-sm">To</p>
+
+                  <input
+                    type="text"
+                    placeholder="Enter city"
+                    class="outline-none text-lg w-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- DATE -->
+
+            <div class="w-1/4 px-6">
+              <div class="flex items-center gap-3">
+                <i data-lucide="calendar-days" class="w-6"></i>
+
+                <div>
+                  <p class="text-gray-400 text-sm">Date of Journey</p>
+
+                  <p class="font-bold">22 Sep, 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WOMEN -->
+
+            <div class="w-1/4 border-l px-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="font-semibold">👩 Booking for women</p>
+
+                  <a href="#" class="text-blue-600 text-sm underline">
+                    Know more
+                  </a>
+                </div>
+
+                <!-- Toggle -->
+
+                <div class="w-12 h-7 bg-red-500 rounded-full p-1">
+                  <div class="w-5 h-5 bg-white rounded-full ml-auto"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEARCH BUTTON -->
+
+          <div class="flex justify-center">
+            <button
+              class="mt-5 bg-red-500 hover:bg-red-600 text-white font-bold px-28 py-4 rounded-full flex items-center gap-2"
+            >
+              <i data-lucide="search"></i>
+
+              Search buses
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRAIN OFFER ================= -->
+
+    <section class="w-[80%] mx-auto mt-10">
+      <div class="flex items-center gap-3">
+        <div class="text-4xl">🚆</div>
+
+        <div>
+          <h2 class="text-2xl font-bold">Book trains for festivals</h2>
+
+          <p class="text-gray-500">Book now to get confirmed ticket</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-50 rounded-2xl p-8 mt-5 flex items-center justify-between"
+      >
+        <p class="text-xl">
+          Get
+          <span class="text-green-600 font-bold"> ₹60 </span>
+          off using code
+          <span class="text-green-700 font-bold"> SUPERB60 </span>
+        </p>
+
+        <div class="flex gap-3">
+          <div class="border border-pink-500 rounded-xl px-12 py-3 text-center">
+            <p>Oct</p>
+
+            <p class="text-pink-600">Dussehra</p>
+          </div>
+
+          <div class="border border-blue-500 rounded-xl px-12 py-3 text-center">
+            <p>Nov</p>
+
+            <p class="text-blue-600">Diwali</p>
+          </div>
+        </div>
+
+        <button
+          class="bg-red-100 text-gray-800 font-bold px-10 py-4 rounded-full"
+        >
+          Book trains now
+        </button>
+      </div>
+    </section>
+
+    <!-- ================= OFFERS ==== -->
+
+    <section class="w-[80%] mx-auto mt-14">
+      <div class="flex justify-between items-center">
+        <h2 class="text-3xl font-bold">Offers for you</h2>
+
+        <a href="#" class="text-blue-600 underline"> View more </a>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+
+      <div class="flex gap-3 mt-6">
+        <button class="bg-red-100 px-6 py-2 rounded-lg">All</button>
+
+        <button class="border px-6 py-2 rounded-lg">Bus</button>
+
+        <button class="border px-6 py-2 rounded-lg">Train</button>
+
+        <button class="border px-6 py-2 rounded-lg">Hotel</button>
+      </div>
+
+      <!-- OFFER CARDS -->
+
+      <div class="grid grid-cols-3 gap-4 mt-6">
+        <!-- CARD 1 -->
+
+        <div
+          class="h-56 rounded-2xl p-5 bg-orange-100 relative overflow-hidden"
+        >
+          <span class="bg-gray-600 text-white px-3 py-1 rounded-lg text-sm">
+            Bus
+          </span>
+
+          <h3 class="text-xl font-bold mt-5">
+            Save up to Rs 300
+            <br />
+            on bus tickets
+          </h3>
+
+          <p class="mt-4">Valid till 23 Sep</p>
+
+          <div
+            class="absolute bottom-5 left-5 bg-white rounded-full px-5 py-3 font-bold"
+          >
+            🏷️ FESTIVE300
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="h-56 rounded-2xl p-5 bg-pink-100 relative overflow-hidden">
+          <span class="bg-gray-600 text-white px-3 py-1 rounded-lg text-sm">
+            Bus
+          </span>
+
+          <h3 class="text-xl font-bold mt-5">
+            Save up to Rs 250
+            <br />
+            on bus tickets
+          </h3>
+
+          <p class="mt-4">Valid till 30 Sep</p>
+
+          <div
+            class="absolute bottom-5 left-5 bg-white rounded-full px-5 py-3 font-bold"
+          >
+            🏷️ FIRST
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="h-56 rounded-2xl p-5 bg-red-100 relative overflow-hidden">
+          <span class="bg-gray-600 text-white px-3 py-1 rounded-lg text-sm">
+            Bus
+          </span>
+
+          <h3 class="text-xl font-bold mt-5">
+            Save up to Rs 300
+            <br />
+            on bus tickets
+          </h3>
+
+          <p class="mt-4">Valid till 30 Sep</p>
+
+          <div
+            class="absolute bottom-5 left-5 bg-white rounded-full px-5 py-3 font-bold"
+          >
+            🏷️ BUS300
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+
+        <div
+          class="h-56 rounded-2xl p-5 bg-yellow-100 relative overflow-hidden"
+        >
+          <span class="bg-gray-600 text-white px-3 py-1 rounded-lg text-sm">
+            Bus
+          </span>
+
+          <h3 class="text-xl font-bold mt-5">
+            Save up to Rs 200
+            <br />
+            on Primo operators
+          </h3>
+
+          <p class="mt-4">Valid till 30 Sep</p>
+
+          <div
+            class="absolute bottom-5 left-5 bg-white rounded-full px-5 py-3 font-bold"
+          >
+            🏷️ PRIMODAY
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GETAWAYS ================= -->
+
+    <section class="mt-14 bg-gray-100 py-16">
+      <div class="w-[80%] mx-auto flex items-center justify-center gap-20">
+        <!-- Images -->
+
+        <div class="flex gap-2">
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=250&q=80"
+            class="w-28 h-36 object-cover rounded-xl rotate-[-5deg]"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=250&q=80"
+            class="w-28 h-36 object-cover rounded-xl rotate-[2deg]"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=250&q=80"
+            class="w-28 h-36 object-cover rounded-xl rotate-[-3deg]"
+          />
+        </div>
+
+        <!-- Text -->
+
+        <div>
+          <p class="text-red-500 text-lg">Introducing Getaways</p>
+
+          <h2 class="text-3xl font-bold mt-2">
+            Hey, ready for a weekend getaway?
+          </h2>
+
+          <p class="text-gray-500 mt-2">Handpicked destinations for you</p>
+
+          <button class="bg-red-100 px-10 py-3 rounded-full font-bold mt-5">
+            Explore all
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GOVERNMENT BUSES ================= -->
+
+    <section class="w-[80%] mx-auto mt-14 mb-20">
+      <h2 class="text-3xl font-bold mb-6">Government Buses</h2>
+
+      <div class="grid grid-cols-4 gap-5">
+        <div class="border rounded-2xl p-5 shadow-sm">
+          <h3 class="font-bold text-xl">APSRTC</h3>
+
+          <span class="bg-green-600 text-white px-2 rounded"> ★ 3.85 </span>
+
+          <p class="text-gray-500 mt-3">Andhra Pradesh State Road Transport</p>
+        </div>
+
+        <div class="border rounded-2xl p-5 shadow-sm">
+          <h3 class="font-bold text-xl">TSRTC</h3>
+
+          <span class="bg-green-600 text-white px-2 rounded"> ★ 3.71 </span>
+
+          <p class="text-gray-500 mt-3">Telangana Road Transport</p>
+        </div>
+
+        <div class="border rounded-2xl p-5 shadow-sm">
+          <h3 class="font-bold text-xl">KERALA RTC</h3>
+
+          <span class="bg-green-600 text-white px-2 rounded"> ★ 3.85 </span>
+
+          <p class="text-gray-500 mt-3">Kerala State Road Transport</p>
+        </div>
+
+        <div class="border rounded-2xl p-5 shadow-sm">
+          <h3 class="font-bold text-xl">KTCL</h3>
+
+          <span class="bg-green-600 text-white px-2 rounded"> ★ 3.83 </span>
+
+          <p class="text-gray-500 mt-3">Kadamba Transport Corporation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLOATING BUTTON ================= -->
+
+    <button
+      class="fixed bottom-5 right-5 bg-gradient-to-r from-red-500 to-purple-600 text-white px-6 py-4 rounded-full shadow-lg font-bold"
+    >
+      ✨ Ask Ray
+    </button>
+
+    <!-- Activate Lucide Icons -->
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
