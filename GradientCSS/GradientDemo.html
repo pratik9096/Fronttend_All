@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- in this section img and gradient both apply  -->
+    <section
+      class="min-h-[600px] bg-gradient-to-r from-blue-700 to purple-700 text-white text-center"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-3xl">
+          <p
+            class="text-blue-200 font-semibold uppercase tracking-wider text-center"
+          >
+            Modern Web Developmwnt
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mt-4">
+            Build Modern Website With Tailwind Css
+          </h1>
+          <p class="text-lg sm:text-xl test-white/80 mt-6">
+            Create responsive web design user interface
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-8">
+            <button
+              class="bg-white text-blue-600 hover:bg-red-100 px-7 py-3 rounded-lg font-bold"
+            >
+              Get Started
+            </button>
+            <button
+              class="border border-white/50 hover:bg-white/10 px-7 py-3 rounded-lg font-bold"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- img at Background  -->
+    <div
+      class="h-96 bg-[url(https://picsum.photos/1200/600)] bg-cover bg-center"
+    ></div>
+
+    <!-- use of opacity  -->
+    <div class="bg-red-600/30 p-10 text-white/">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempora.
+      </h2>
+    </div>
+
+    <div class="bg-blue-600/50 p-10 text-white"></div>
+
+    <!-- colour gradient multiple color -->
+    <div
+      class="bg-gradient-to-br from-orange-700 via-white-400 to-green-500 p-10 text-white"
+    >
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem,
+        doloremque maiores quibusdam aliquam provident aspernatur commodi sunt
+        labore quam.
+      </h2>
+    </div>
+  </body>
+</html>
