@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let bankName = "SBI";
+      let AccountType = "Saving";
+      let pincode = 1234;
+      let language = "Marathi";
+      let Balance = 20000;
+      let withdrawAmount = 2500;
+      //===   this is identical operator check the value as well as type of thta variable also thats why identical //
+      if (bankName === "SBI") {
+        if (AccountType === "Saving") {
+          if (pincode == "1234") {
+            //   in this condition we use == becos when we fetch data as Password from APi it comes in json format
+
+            if (
+              language === "English" ||
+              language === " Hindi" ||
+              language === "Marathi"
+            ) {
+              if (Balance >= withdrawAmount) {
+                if ((withdrawAmount % 100 == 0) & (withdrawAmount <= 20000)) {
+                  console.log(`bank Balance ${Balance}`);
+                  console.log(`Withdraw Amount : ${withdrawAmount}`);
+                  console.log(`After transactions : `);
+                  Balance -= withdrawAmount;
+                  console.log(
+                    `Withdrawal Amount process Complted Succeessfully ! `,
+                  );
+                  console.log(`Collect Amount : ${withdrawAmount}`);
+                  console.log(`Updated balance is ${Balance}`);
+                } else {
+                  console.log(
+                    `Amount must be multiplication of 100 and less than 20000 `,
+                  );
+                }
+              } else {
+                console.log(`Withdraw Amount must be less than total balance `);
+              }
+            } else {
+              console.log(`Check language ..`);
+            }
+          } else {
+            console.log(`Please check the Pin !`);
+          }
+        } else {
+          console.log(`Account Type Be a Saving `);
+        }
+      } else {
+        console.log(`Please check the Bank Name ! `);
+      }
+    </script>
+  </body>
+</html>

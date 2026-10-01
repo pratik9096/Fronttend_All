@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var marks = Number.parseFloat(prompt("Enter marks Out Of 100"));
+
+      if (marks > 100) {
+        console.log(`marks Invalid Must Be less Than 100`);
+      } else if (marks >= 75 && marks <= 100) {
+        console.log(`Pass With Distinction`);
+      } else if (marks >= 45 && marks <= 74) {
+        console.log(`Pass with second class`);
+      } else if (marks >= 30 && marks <= 43) {
+        console.log(`Pass`);
+      } else {
+        console.log(`Fail  Ho gaya BC `);
+      }
+    </script>
+  </body>
+</html>
