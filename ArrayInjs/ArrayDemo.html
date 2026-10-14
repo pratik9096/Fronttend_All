@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const products = ["Laptop", "Tablet", "Mobile", " keyword ", "MOuse"];
+      // const fetchdProducts = products.slice(2, 1);
+      //  const lasttwo = products.slice(-2);
+      // console.log(fetchdProducts);
+      //  console.log(lasttwo);
+      // to find selectecd product using indexof
+      console.log(`index of Mobile is ${products.indexOf("Mobile")}`);
+      const serachp = products.includes("tablet"); // search products Using Includes in the arrays give Boolean value
+      console.log(`Search Products : ${serachp}`);
+    </script>
+
+    <script>
+      // remove elemts using splice
+      const num = [10, 20, 30, 40, 50];
+      const removeElemts = num.splice(2, 1);
+      console.log(removeElemts);
+      console.log(num);
+
+      // Add elemets using spilce
+      num.splice(3, 0, "TV", "Bike ", " Camera", "Headphone");
+      for (let cartItem of num) {
+        console.log(cartItem);
+      }
+      //replace existing elemts
+
+      num.splice(3, 1, "Sony Bravia TV");
+      console.log(cart);
+    </script>
+
+    <script>
+      var data = [1, "Pratik ", 25, "Male", " Pune ", 2500]; // pop elemets from last ....remove elemets
+      console.log(data);
+
+      for (var d1 of data) {
+        console.log(d1);
+      }
+      data.pop();
+      data.pop();
+    </script>
+
+    <script>
+      var data = [1, "Pratik ", 25, "Male", " Pune ", 2500]; // array with laterral
+      console.log(data);
+
+      for (var d1 of data) {
+        console.log(d1);
+      }
+      data.push("IT asset management", 10, "JAVA F STACK");
+    </script>
+
+    <script>
+      var car = new Array(10, "Pratik", 15, "Male"); // array with new keyword
+      console.log(car);
+
+      for (let C of car) {
+        console.log(C);
+      }
+
+      var person = [1, "Pratik ", 25, "Male", " Pune ", 2500]; // array with laterral
+      console.log(person);
+
+      for (let p of person) {
+        // traverse the arrays using for each loop
+        console.log(p);
+        console.log(person.length);
+
+        person[1] = "Pratik Shewale"; // update Array value by indexing
+        for (let p of person) {
+          console.log(p);
+        }
+      }
+    </script>
+  </body>
+</html>

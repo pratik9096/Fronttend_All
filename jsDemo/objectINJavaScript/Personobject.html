@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Student = new Object();
+      Student.rollNo = 10;
+      Student.name = "Viraj kamble";
+      Student.email = "viru@gmail.com";
+
+      console.log(
+        `student Information :  ${Student.rollNo} , name is ${Student.name} , email is ${Student.email}`,
+      );
+    </script>
+
+    <script>
+      const Person = {
+        id: 101,
+        name: "Pratik",
+        address: "Pune",
+        Address: {
+          address1: "flat No 202 Pune Warje",
+          City: "Mumbai",
+          locality: "Near Zudio ",
+        },
+        work: "Developer",
+        age: 22,
+        mobileNo: 9403707258,
+        weigth: 22,
+        Skills: ["java", "python", "js", "Don.Net"],
+        email: "pratikshewale@gmail.com",
+      };
+
+      //Dynamic Property Access     we can accesss at global level without creating every time
+      const field = "Skills";
+      console.log(Person[field]);
+
+      // Deleteting  object properties
+      delete Person.mobileNo;
+      console.log(Person);
+
+      // spread Operator
+      const updatePerson = {
+        ...Person,
+        hobbies: ["Playing cricket", "Dance", " gaming "],
+      };
+
+      console.log(`Persons Information`);
+      console.log(Person.id);
+      console.log(Person.name);
+
+      console.log(Person.address);
+
+      console.log(Person.work);
+      console.log(Person["age"]);
+      console.log(Person.mobileNo);
+      console.log(Person.weigth);
+      console.log(Person.Skills[3]);
+      console.log(Person.Address.City);
+      console.log(updatePerson.hobbies);
+    </script>
+  </body>
+</html>

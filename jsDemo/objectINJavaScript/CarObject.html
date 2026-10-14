@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Car = {
+        carBrand: "TATA",
+        CarModel: "TATA-Safari",
+        Coloroptions: ["White", "Z-Black", "Brown", "Grey"],
+        Showroom: {
+          Address: "Pune Near Shivaji Nagar",
+          Locality: "Fc Road",
+          mobile: 84926930373,
+        },
+      };
+      //Dynamic Property Access
+      const field = "email";
+      console.log(person[field]);
+
+      console.log(`Car details `);
+      console.log(Car.carBrand);
+      console.log(Car.CarModel);
+      console.log(Car.Coloroptions);
+      console.log(Car.Showroom);
+      console.log(Car.Showroom.Locality);
+    </script>
+  </body>
+</html>
