@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //find the first high-priority incident
+
+      const incident = [
+        { number: "INC1001", priority: 3, status: "Open" },
+        { number: "INC1002", priority: 4, status: "In progrees" },
+        { number: "INC1003", priority: 1, status: "Open" },
+        { number: "INC1004", priority: 3, status: "Open" },
+        { number: "INC1005", priority: 2, status: "closed" },
+        { number: "INC1006", priority: 1, status: "Resolved" },
+      ];
+      // find priority is 2 and status is open Assi 1
+
+      const findIndex = incident.findIndex(
+        (INC) => INC.priority === 1 && INC.status === "Open",
+      );
+      console.log(findIndex);
+      if (findIndex !== -1) {
+        console.log(incident[findIndex].number);
+      }
+
+      console.log(result);
+    </script>
+
+    <script>
+      // add salary of employee in this table and  fetch salary range of 30 to 40 k of empl using filter
+      const employee = [
+        { id: 101, name: "Amit", department: "IT", Salary: 10000 },
+        { id: 102, name: "Arun", department: "Mech", Salary: 30000 },
+        { id: 103, name: "Amuu", department: "com", Salary: 35000 },
+        { id: 104, name: "Raj", department: "IT", Salary: 5000 },
+        { id: 105, name: "Virr", department: "Account", Salary: 39000 },
+        { id: 106, name: "Roy", department: "testing", Salary: 40000 },
+      ];
+
+      //   const index = employee.findIndex((emp) => emp.department === "IT");     findindex () method
+      //   console.log(index);
+      //    console.log(employees[index]);
+
+      const itemp = employee.filter((emp) => emp.department === "IT");
+      console.log(itemp);
+      console.log(`IT Employye Count : ${itemp.length}`);
+    </script>
+  </body>
+</html>
