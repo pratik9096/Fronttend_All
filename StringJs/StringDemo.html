@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let emailformat = ["@gmail.com"];
+
+      let format = prompt("Enter Your gmail with Valid format");
+      let result = emailformat.filter((emailformat) =>
+        emailformat.toLowerCase().includes(format.toLowerCase()),
+      );
+      if (result.length !== 0) {
+        console.log(result);
+      } else {
+        console.log("email format invalid");
+      }
+    </script>
+
+    <!-- <script>
+      let products = [
+        "Dell laptop",
+        "Samsung Mobile ",
+        "Mi Tv",
+        "iphone 18 Pro",
+        "Mouse",
+        "Keyboard",
+      ];
+      let searchText = prompt("Enter the product that You want to search..");
+      let result = products.filter((products) =>
+        products.toLowerCase().includes(searchText.toLowerCase()),
+      );
+      if (result.length !== 0) {
+        console.log(result);
+      } else {
+        console.log("No product Found !");
+      }
+    </script> -->
+
+    <!-- <script>
+      let speech = "JAVASCRIPT";
+
+      console.log(speech.startsWith("JAVA"));
+      console.log(speech.startsWith("PT"));
+      console.log(speech.endsWith("T"));
+    </script> -->
+
+    <!-- <script>
+      let fristName = "Amit";
+      let lastname = "Kamble";
+
+      console.log(`my Name Is Mr .${fristName} ${lastname}`);
+      console.log(`My Name Is Mr.  ` + fristName + " " + lastname);
+
+      let num1 = 500;
+      let num2 = 600;
+      let result = num1 + num2;
+      console.log(result);
+      console.log(result.length);
+
+      let string = "Pratik 105";
+      Console.log(string.charAt(8));
+    </script>
+
+      let lanuage = "javascript";
+      console.log(lanuage.at(-1));
+      console.log(lanuage.at(4));
+      console.log(lanuage.charCodeAt(5));
+    </script> -->
+
+    <!-- <script>
+      let email = prompt("Enter Email Id : ");
+      let finalemail = email.toLowerCase().trim();
+      console.log(finalemail);
+    </script>
+    <script>
+        let message ='This is Web development Session And current Ongoing session';
+        console.log(message.includes("JAVAscipt"));
+
+    </script> -->
+  </body>
+</html>
