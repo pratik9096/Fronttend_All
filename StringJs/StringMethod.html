@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let skills = ["java", "javascrript", "Dotnet ", "HTML", "css", "Spring"];
+
+      console.log(skills.join(" "));
+      console.log(skills.join(", "));
+      console.log(skills.join(" -> "));
+    </script>
+
+    <script>
+      let cites = "PUne, mumbai , Thane, malad, juhu";
+
+      let cityName = cites.split(" ,");
+
+      console.log(cityName);
+      console.log(cityName.length);
+    </script>
+
+    <script>
+      let email = "amol.kale@gmail.com";
+      let atposition = email.indexOf("@");
+      if (atposition !== -1) {
+        let domain = email.slice(atposition + 1);
+
+        console.log(domain);
+      } else {
+        console.log("Invalid email format ");
+
+        let newEmail = email.replace("amol.kale", "pratik Roy123");
+        console.log(newEmail);
+      }
+    </script>
+
+    <script>
+      let speech = "Hello I am Prartik";
+      console.log(speech.startsWith("Hello"));
+
+      let result1 = speech.slice(5, 13);
+      console.log(result1);
+    </script>
+
+    <script>
+      let joiningDate = new Date("2025-07-25T10:30:00Z");
+      console.log(joiningDate);
+    </script>
+
+    <script>
+      let date = new Date();
+
+      console.log(`Current Date & Time is : ${date}`);
+      console.log(typeof date);
+      console.log(
+        `Current Date : ${date.getDate()} -${date.getMonth()} -${date.getFullYear()} `,
+      );
+      console.log(
+        `Current TIme : ${date.getHours()}: ${date.getMinutes()}: ${date.getDay}`,
+      );
+    </script>
+
+    <script>
+      function calculateExperience(joiningDate, currentDate) {
+        let years = currentDate.getFullYear() - joiningDate.getFullYear();
+
+        let months = currentDate.getMonth() - joiningDate.getMonth();
+
+        if (currentDate.getDate() < joiningDate.getDate()) {
+          months--;
+        }
+
+        if (months < 0) {
+          years--;
+          months += 12;
+        }
+
+        return { years, months };
+      }
+
+      let joiningDatee = new Date(2021, 5, 15);
+      let currentDate = new Date(2026, 10, 21);
+
+      let experience = calculateExperience(joiningDatee, currentDate);
+
+      console.log(experience);
+      console.log(`${experience.years} years and ${experience.months} months`);
+    </script>
+  </body>
+</html>
