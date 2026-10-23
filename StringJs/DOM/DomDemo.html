@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Welcome to Seven mentor</h1>
+
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod nam
+      ut? Accusamus ipsam fuga expedita ullam alias error maiores.
+    </p>
+
+    <script>
+      let heading = document.getElementById("heading");
+      let para = document.getElementById("para");
+      console.log(`Page Heading ${heading.textContent}`);
+      console.log(`Page Paragraph : ${para.textContent}`);
+
+      console.log(document.title);
+      document.title = "JAVAscript Dom";
+      console.log(document.title);
+    </script>
+  </body>
+</html>
