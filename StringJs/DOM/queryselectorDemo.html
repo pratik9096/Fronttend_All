@@ -6,17 +6,55 @@
     <title>Document</title>
   </head>
   <body>
+    <h1 id="heading">Welcome to DOM</h1>
+
+    <button id="changeButton">Change Style</button>
+
+    <button id="changeHeading">Change heading</button>
+
+    <hr />
+
+    <!-- < iner Text > -->
+
+    <div id="sample">
+      <p>
+        Hello
+        <span style="display: none"> Amol Prasad </span>
+      </p>
+    </div>
+
     <h1 id="title">DOM training</h1>
     <p class="info">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur,
       maiores?
     </p>
     <p class="info">Lorem ipsum dolor sit amet.</p>
+
+    <ul>
+      <li class="Skills">HTML</li>
+      <li class="Skills">CSS</li>
+      <li class="Skills">JS</li>
+      <li class="Skills">JAVA</li>
+      <li class="Skills">SQL</li>
+      <li class="Skills">Python</li>
+    </ul>
+
+    <div id="container"></div>
+
     <script>
       console.log(document.querySelector("#title").textContent);
       console.log(document.querySelector(".info").textContent);
 
       console.log(document.querySelector("p").textContent);
+
+      let skills = document.querySelectorAll(".Skills");
+
+      console.log(Skills.length);
+      skills.forEach((skill) => {
+        console.log(skill.textContent);
+      });
     </script>
+
+    <script src="./queryselectorDemo.js"></script>
   </body>
 </html>
