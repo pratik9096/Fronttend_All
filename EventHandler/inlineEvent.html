@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  inline Event handling is rerly use in the industry -->
+    <h1>Event handling (Inline Event )</h1>
+
+    <button onclick="display()">Show Message</button>
+
+    <button id="saveButton">Save Employee</button>
+
+    <script>
+      let display = () => {
+        alert("Welcome to Event handling first Program");
+      };
+    </script>
+
+    <!-- <script>
+      const button = document.getElementById("saveButton");
+
+      //    Anonomous function
+      button.onclick = function () {
+        alert("Employee saved successfully !");
+      };
+    </script> -->
+
+    <script>
+      const button = document.getElementById("saveButton");
+      //  Arrow Function =>
+      button.addEventListener("click", () => {
+        alert("Employee Save Successfully !");
+      });
+    </script>
+  </body>
+</html>

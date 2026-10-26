@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+
+    <style>
+      .product-card {
+        width: 280px;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: background-color 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  feedback field text count -->
+    <label id="feedback"> Write feedback:</label>
+    <br />
+    <textarea name="feedback" id="feedback" maxlength="100"></textarea>
+
+    <p><span id="count">0</span>/100 character</p>
+
+    <!-- product card -->
+
+    <div id="product" class="product-card">
+      <h2>Laptop</h2>
+      <h5>Price: Rs.85000</h5>
+      <p id="status">On Stock</p>
+    </div>
+
+    <hr />
+
+    <div>
+      <label for="username">Username</label>
+      <input id="username" type="text" />
+      <h4 id="result"></h4>
+    </div>
+
+    <script>
+      const product = document.getElementById("product");
+      const status = document.getElementById("status");
+
+      const username = document.getElementById("username");
+      const result = document.getElementById("result");
+
+      product.addEventListener("mouseenter", () => {
+        product.style.backgroundColor = "lightyellow";
+        status.textContent = "Product Selected";
+      });
+
+      product.addEventListener("mouseleave", () => {
+        product.style.backgroundColor = "white";
+        status.textContent = "On Stock";
+      });
+
+      username.addEventListener("keydown", (event) => {
+        result.textContent = "You pressed: " + event.key;
+      });
+
+      //    logic of feedback
+
+      const feedback = document.getElementById("feedback");
+      const count = document.getElementById("count");
+
+      feedback.addEventListener("input", function () {
+        count.textContent = feedback.value.length;
+      });
+    </script>
+  </body>
+</html>

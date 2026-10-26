@@ -30,4 +30,5 @@ let button1 = document.getElementById("changeHeading");
 
 button1.addEventListener("click", () => {
   heading1.textContent = "Welcome TO web- Development Batch";
+  heading1.style.backgroundColor = "yellow";
 });
